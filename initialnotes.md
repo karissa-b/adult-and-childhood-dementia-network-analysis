@@ -16,6 +16,41 @@ https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(23)00076-2/fullte
 
 `conda activate netcoloc`
 
+`conda install pip`
+
+`pip install netcoloc`
+
+`git clone --branch python3 https://github.com/idekerlab/ddot.git` 
+
+`cd ddot ` 
+
+`python setup.py bdist_wheel `
+
+`pip install dist/ddot*py3*whl`
+
+this failed. I think its a compatability between python versions. 
+
+So for this conda env, I will run python3.19 (as the github repo says this ddot will only work < python3.10) 
+
+`conda install python=3.7`
+pip install netcoloc
+`python --version`
+> Python 3.9.19
+
+this hasnt overly worked. I think its because i cant install ddot, as python3.6 is super old and doesnt appear to be supported on M series macs. 
+
+The package tulip seems to be the problem here. I downloaded latest version from here: 
+https://sourceforge.net/projects/auber
 
 
+conda install python
+pip install 
+
+export PYTHONPATH="/Applications/Tulip-5.7.4.app/Contents/lib/python:$PYTHONPATH"
+
+export DYLD_LIBRARY_PATH="/Applications/Tulip-5.7.4.app/Contents/lib:$DYLD_LIBRARY_PATH"  # Replace with your actual directory
+
+
+
+Try a python virtual env. maybe conda is the problem
 
