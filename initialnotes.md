@@ -54,3 +54,25 @@ export DYLD_LIBRARY_PATH="/Applications/Tulip-5.7.4.app/Contents/lib:$DYLD_LIBRA
 
 Try a python virtual env. maybe conda is the problem
 
+also try  on my intel MBP. 
+
+```
+# create the conda env
+conda create --name "netcoloc" python=3.8
+conda activate netcoloc
+
+conda install -y -c conda-forge python-igraph
+conda install -y libiconv 
+conda install -y pandas numpy scipy networkx>=2.0
+
+pip install tulip-python
+pip install ndex-dev
+
+# was in the ddot dir
+pip install . 
+
+pip install cdapsutil
+```
+
+This has worked!!!! 
+
