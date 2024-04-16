@@ -79,17 +79,26 @@ But its super slow.
 Im going to try on deepthought using jupyterhub
 
 ```
-conda create netcoloc python=3.9
-conda activate netcoloc
+conda create --name netcoloc2 python=3.9
+conda activate netcoloc2
 
 # check python version:
 python --version
 # > Python 3.9.17
 
-# install packages
-conda install pip
+# ~~ install packages ~~ 
+# for jupyter on deepthought. 
+python3 -m pip install cm-jupyter-eg-kernel-wlm bash-kernel
+conda install ipython ipython_genutils
+
+
 conda install -y -c conda-forge python-igraph
 conda install -y libiconv
 conda install -y pandas numpy scipy networkx>=2.0
+
+pip install tulip-python
+
+pip install netcoloc
+```
 
 
