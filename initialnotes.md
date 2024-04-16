@@ -58,12 +58,11 @@ also try  on my intel MBP.
 
 ```
 # create the conda env
-conda create --name "netcoloc" python=3.8
+conda create --name "netcoloc" python=3.9
 conda activate netcoloc
 
 conda install -y -c conda-forge python-igraph
-conda install -y libiconv 
-conda install -y pandas numpy scipy networkx>=2.0
+conda install -y libiconv pandas numpy scipy networkx>=2.0
 
 pip install tulip-python
 pip install ndex-dev
@@ -75,4 +74,22 @@ pip install cdapsutil
 ```
 
 This has worked!!!! 
+But its super slow. 
+
+Im going to try on deepthought using jupyterhub
+
+```
+conda create netcoloc python=3.9
+conda activate netcoloc
+
+# check python version:
+python --version
+# > Python 3.9.17
+
+# install packages
+conda install pip
+conda install -y -c conda-forge python-igraph
+conda install -y libiconv
+conda install -y pandas numpy scipy networkx>=2.0
+
 
