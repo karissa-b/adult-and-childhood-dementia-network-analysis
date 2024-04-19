@@ -101,4 +101,12 @@ pip install tulip-python
 pip install netcoloc
 ```
 
+Something is not right here on deepthought. i can get all pkgs to install on deepthought. But I cannot get conda via slurm templates to work. 
+
+S/O to adelaide bioinformatics, they forwarded me this link: 
+https://fame.flinders.edu.au/blog/2022/07/16/jupyter-deepthought2 
+
+I will try this now instead. 
+
+
 
